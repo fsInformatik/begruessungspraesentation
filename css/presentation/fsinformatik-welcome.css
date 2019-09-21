@@ -1,0 +1,113 @@
+
+/*
+	These 'slide' step styles were heavily inspired by HTML5 Slides:
+	http://html5slides.googlecode.com/svn/trunk/styles.css
+
+	;)
+
+	They cover everything what you see on first three steps of the demo.
+*/
+
+.img-0,
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7,
+.img-8,
+.img-9,
+.img-10,
+.img-11,
+.img-12,
+.img-13,
+.img-14,
+.img-15 {
+	opacity: 0;
+	transition: 0.75s;
+}
+
+.step.active .img-0,
+.step.active .img-1,
+.step.active .img-2,
+.step.active .img-3,
+.step.active .img-4,
+.step.active .img-5,
+.step.active .img-6,
+.step.active .img-7,
+.step.active .img-8,
+.step.active .img-9,
+.step.active .img-10,
+.step.active .img-11,
+.step.active .img-12,
+.step.active .img-13,
+.step.active .img-14,
+.step.active .img-15 {
+	opacity: 1;
+	transition: 0.75s;
+}
+
+.step.active .img-0 {
+	transition-delay: 0.0s
+}
+
+.step.active .img-1 {
+	transition-delay: 0.05s
+}
+
+.step.active .img-2 {
+	transition-delay: 0.1s
+}
+
+.step.active .img-3 {
+	transition-delay: 0.15s
+}
+
+.step.active .img-4 {
+	transition-delay: 0.2s
+}
+
+.step.active .img-5 {
+	transition-delay: 0.25s
+}
+
+.step.active .img-6 {
+	transition-delay: 0.3s
+}
+
+.step.active .img-7 {
+	transition-delay: 0.35s
+}
+
+.step.active .img-8 {
+	transition-delay: 0.4s
+}
+
+.step.active .img-9 {
+	transition-delay: 0.45s
+}
+
+.step.active .img-10 {
+	transition-delay: 0.5s
+}
+
+.step.active .img-11 {
+	transition-delay: 0.55s
+}
+
+.step.active .img-12 {
+	transition-delay: 0.60s
+}
+
+.step.active .img-13 {
+	transition-delay: 0.65s
+}
+
+.step.active .img-14 {
+	transition-delay: 0.7s
+}
+
+.step.active .img-15 {
+	transition-delay: 0.75s
+}

@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=100,height=768" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Willkommen in der Fachschaft Informatik</title>
+
+	<meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+	<meta name="author" content="Hans Joachim Multhaupt" />
+
+	<!-- link href="css/impress-demo.css" rel="stylesheet" /-->
+	<link href="css/fsinformatik-reset.css" rel="stylesheet" comment="required to reset the css" />
+	<link href="css/fsinformatik-hint.css" rel="stylesheet" comment="required for the usage-hint" />
+	<link href="css/fsinformatik-base-design.css" rel="stylesheet" comment="contains the base-design, common for all presentations." />
+	<link href="css/presentation/fsinformatik-welcome.css" rel="stylesheet" comment="the design for this, specific presentation.." />
+
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<script type="text/javascript">
+var windowObjectReference = null; // global variable
+
+function openRequestedPopup(strUrl, strWindowName) {
+//	alert("open");
+	if(windowObjectReference == null || windowObjectReference.closed) {
+		windowObjectReference = window.open(strUrl, strWindowName, "menubar,toolbar,location,personalbar,resizable,scrollbars,status");
+	} else {
+		windowObjectReference.focus();
+ };
+}
+</script>
+
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+	<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="10" data-perspective="1000" data-width="1280" data-height="1024">
+
+	<!--
+		So to make a summary of all the possible attributes used to position presentation steps, we have:
+
+		* `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+			the canvas in pixels; their default value is 0;
+		* `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+			the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+			are exactly the same;
+		* `data-scale` - defines the scale of step element; default value is 1
+
+		These values are used by impress.js in CSS transformation functions, so for more information consult
+		CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+	-->
+
+	<div id="preparation" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>&nbsp;</h1>
+		</div>
+		<div class="content">
+			<img class="preloader" src="./img/A_Alexis.jpg" />
+			<img class="preloader" src="./img/alice.jpg" />
+			<img class="preloader" src="./img/boettger.jpg" />
+			<img class="preloader" src="./img/carmen.jpg" />
+			<img class="preloader" src="./img/christian.jpg" />
+			<img class="preloader" src="./img/dennis.jpg" />
+			<img class="preloader" src="./img/A_David.jpg" />
+			<img class="preloader" src="./img/farina.jpg" />
+			<img class="preloader" src="./img/florian.jpg" />
+			<img class="preloader" src="./img/jens.jpg" />
+			<img class="preloader" src="./img/julian.jpg" />
+			<img class="preloader" src="./img/A_ Katrin.jpg" />
+			<img class="preloader" src="./img/michael.jpg" />
+			<img class="preloader" src="./img/robin.jpg" />
+			<img class="preloader" src="./img/tati.jpg" />
+			<img class="preloader" src="./img/sarah_b.jpg" />
+			<img class="preloader" src="./img/leona.jpg" />
+			<img class="preloader" src="./img/georgia.jpg" />
+			<img class="preloader" src="./img/vivi.jpg" />
+			<img class="preloader" src="./img/hannah.jpg" />
+			<img class="preloader" src="./img/platzhalter.jpg" />
+			<img class="preloader" src="./img/sportkeller.png" />
+			<img class="preloader" src="./img/skriptedruck.jpg" />
+			<img class="preloader" src="./img/rekos.jpg" />
+			<img class="preloader" src="./img/facebook-qr-code.png" />
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="start" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1 class="center small">Herzlich Willkommen in der Fachschaft Informatik!</h1>
+		</div>
+		<div class="content">
+			<div class="substep">
+				<ol>
+				<li>Fachschaft = Alle Studierende der Westfälischen Hochschule, die einen dieser Studiengänge belegen:
+					<ol>
+					<li>Praktische oder Technische Informatik (Bachelor / Dual / Master)
+					<li>Medieninformatik (Bachelor / Dual / Master)
+					<li>Wirtschaftsinformatik (Bachelor / Dual / Master)
+					<li>Internet-Sicherheit (Master)
+					</ol>
+				<li class="substep">Und ihr gehört dazu!
+				</ol>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE BEGRÜßUNG ======================================================================================== -->
+	<!-- ======================================================================================================= -->
+
+	<div id="who-the-o-tutors-are" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Die O-Tutoren</h1>
+		</div>
+		<div class="content">
+			<div class="center">
+				<img class="img-2" src="./img/Anika.jpg" width="194" height="252" />
+				<img class="img-5" src="./img/tati.jpg" width="194" height="252" />
+				<img class="img-2" src="./img/hannah.jpg" width="194" height="252" />
+				<img class="img-2" src="./img/Fari-1.jpg" width="194" height="252" />
+				<img class="img-5" src="./img/vivi.jpg" width="194" height="252" />
+				<br />
+				<img class="img-2" src="./img/Nicole.jpg" width="194" height="252" />
+				<img class="img-6" src="./img/Lukas.jpg" width="194" height="252">
+				<img class="img-2" src="./img/Tareq.jpg" width="194" height="252" />
+				<img class="img-7" src="./img/robin.jpg" width="194" height="252" />
+			</div>
+
+			<div>
+				<h2>Kontakt</h2>
+				<ol>
+				<li><a href="http://fachschaftinformatik.de/o-tutorium.html">fachschaftinformatik.de/o-tutorium.html</a>
+				<li><a href="mailto:o-tutorium@fachschaftinformatik.de">o-tutorium@fachschaftinformatik.de</a>
+				</ol>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="who-the-o-tutors-are2" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Wofür sind die O-Tutoren da?</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>O-Tutoren = Orientierungs-Tutoren
+				<ol>
+				<li>Studierende, die anderen Studierenden beim Studienbeginn helfen.
+				</ol>
+			<li>Ziele:
+				<ol>
+				<li>Hilfe beim Studieneinstieg
+				<li>Ansprechpartner bei Fragen
+				</ol>
+			<li>Die O-Wochen laufen bis zum 04.10.2019
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="what-the-o-tutors-do" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Was machen wir für euch?</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>Frühstücksbuffet <sup>1)</sup><br />
+				<ol>
+					<li>Do. 26.09., Mo. 30.09., Di. 01.10.
+					<li>2,50 € pro Person pro Tag
+				</ol>
+				</li>
+			<li>Ersti-Kneipentour (02.10.) <sup>1)</sup></li>
+			<li>Stundenplantutorium <sup>1)</sup></li>
+			<li>Ersti-Stammtisch (08.10.)</li>
+			<li>Hilfe bei Fragen aller Art</li>
+			</ol>
+
+			<div class="right"><sup>1) Siehe vorläufiger Stundenplan</sup></div>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE O-TUTOREN ======================================================================================== -->
+	<!-- ======================================================================================================= -->
+
+	<div id="the-fsv" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Die Fachschaftsvertretung</h1>
+		</div>
+		<div class="content">
+			<div class="center">
+				<img class="img-2" src="./img/Anika.jpg" width="194" height="252" />
+				<img class="img-0" src="./img/alice.jpg" width="194" height="252" />
+				<img class="img-14" src="./img/tati.jpg" width="194" height="252" />
+				<img class="img-3" src="./img/Fari-1.jpg" width="194" height="252" />
+				<br />
+				<img class="img-5" src="./img/A_ Katrin.jpg" width="194" height="252" />
+				<img class="img-4" src="./img/Nicole.jpg" width="194" height="252" />
+				<img class="img-14" src="./img/boettger.jpg" width="194" height="252" />
+				<img class="img-14" src="./img/platzhalter.jpg" width="194" height="252" />
+				<br />
+				<img class="img-13" src="./img/robin.jpg" width="194" height="252" />
+				<img class="img-11" src="./img/jens.jpg" width="194" height="252" />
+				<img class="img-14" src="./img/platzhalter.jpg" width="194" height="252" />
+				<!--img class="img-14" src="./img/fsv-du.jpg" width="194" height="252" /-->
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="who-the-fsv-is" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Was ist die FSV</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>FSV = Fachschaftsvertretung
+				<ol>
+				<li>Studierende, die die Interessen ihrer Fachschaft vertreten<br />
+					(folglich eure Interessen)
+				</ol>
+			<li>Bis zu 15 gewählte Studierende aus der Fachschaft Informatik
+			<li>Diese sind alle ehrenamtlich tätig<br />
+				<ol>
+				<li>Es gibt dafür kein Geld!
+				</ol>
+			</ol>
+
+			<h2>Wofür ist die FSV da?</h2>
+			<ol>
+			<li>Wir vertreten eure Interessen
+				<ol>
+				<li>Gegenüber den Professoren
+				<li>Gegenüber anderen studentischen Gremien
+				<li>Gegenüber der Hochschule
+				</ol>
+			<li>Wir sind eure Ansprechpartner bei Problemen
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="fsv-events" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Events der FSV</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>Spieleabende
+				<ol>
+				<li>Regelmäßig einmal pro Monat
+				</ol>
+			</li>
+			<li>Kneipentouren</li>
+			<li>Partys</li>
+			<li>LAN-Party</li>
+			<li>Grillveranstaltungen</li>
+			<li>Waffel- und Glühweinverkauf</li>
+			<li>Weihnachtsessen</li>
+			<li>Freibierparty</li>
+			<li>u.v.m.</li>
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="what-the-fsv-does" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Was bietet die FSV sonst noch?</h1>
+		</div>
+		<div class="content">
+			<ol>
+				<li>Beratungsangebote
+				<li>Skripte-Druck (Zusammen mit dem AStA)
+				<li>Klausurrekonstruktionen
+				<li>Stellenanzeigen
+				<li>Microsoft Imagine
+					<ol>
+						<li>Ansprechpartner: Tatjana Jessen<br />
+						<a href="mailto:imagine@fachschaftinformatik.de">imagine@fachschaftinformatik.de</a></li>
+					</ol>
+				</li>
+				<li>Schreibutensilien, Nervennahrung und Getränke
+				<li>Leihangebote
+					<ol>
+						<li>Tischtennisschläger, Badminton, Volleyball...</li>
+						<li>Taschenrechner, Presenter...</li>
+					</ol>
+				<li>Kostenloser Kaffee<br />
+					<ol>
+					<li>Nur während der Sprechstunden der FSV-Mitglieder
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="contact-the-fsv" class="step slide" data-x="0" data-y="0">
+			<div class="header">
+				<h1>Euer Draht zu uns</h1>
+			</div>
+			<div class="content">
+				<div class="left">
+					<ol>
+						<li><a href="mailto:kontakt@fachschaftinformatik.de">kontakt@fachschaftinformatik.de</a>
+						<li>Tel. 0209 / 9596 - 416
+					</ol>
+					<h2>Oder persönlich während unserer Sprechstunden</h2>
+					<ol>
+						<li>Während der Vorlesungszeiten in den Pausen
+						<li>Während der Vorlesungsfreienzeit "Auf gut Glück"
+					</ol>
+					<h2>Auf dem laufenden bleiben</h2>
+					<ol>
+						<li><a href="http://fachschaftinformatik.de/">fachschaftinformatik.de</a>
+						<li><a href="https://twitter.com/fs_informatik">Twitter</a>, <a href="http://fachschaftinformatik.de/fb">Facebook</a>, <a href="https://www.instagram.com/fs_informatik/">Instagram</a>
+					</ol>
+				</div>
+			</div>
+			<div class="footer">
+				<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+			</div>
+		</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE DIE FSV ========================================================================================== -->
+	<!-- ======================================================================================================= -->
+
+	<div id="who-are-you" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Darüber hinaus &#8230;</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>&#8230; gibt es noch viele weitere Gremien:
+				<ol>
+				<li>AStA
+				<li>StuPa
+				<li>Fachbereichsrat
+				<li>Hochschulrat
+				<li>Senat
+				<li>zQVK
+				<li>QVK
+				<li>Prüfungsausschuss
+				<li>&#8230;
+				</ol>
+			<!-- <li>Eine Übersicht findet Ihr unter fachschaftinformatik.de TODO -->
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE WEITERE GREMIEN ================================================================================== -->
+	<!-- ======================================================================================================= -->
+
+	<!-- About studying... -->
+
+	<div id="studere-1" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Von Euch wird einiges erwartet</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li><strike>Einhalten der Regelstudienzeit</strike>
+			<li>Selbstständigkeit (Hürde #1)
+			<li>Lernbereitschaft (Hürde #2)
+			<li>Respekt gegenüber den Dozenten, Professoren und euren Kommilitonen
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Damit das Studium nicht zur Folter wird</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>Sucht euch Lerngruppen
+			<li>Erarbeitet eure eigenen Lösungen
+			<li>Bereitet eure Vorlesungen, Übungen und Praktika vor und nach!
+			<li>Und nehmt natürlich an den Events der FSV/des AStA teil ;)
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE ERWARTUNGSHALTUNG ================================================================================ -->
+	<!-- ======================================================================================================= -->
+
+	<div id="places-inside" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1 class="center">Orte von denen man wissen sollte</h1>
+		</div>
+		<div class="content">
+			<img style="float:right; height:10em; width: auto;" class="img-0" src="./img/sportkeller.png" />
+			<h2>Der Sportkeller</h2>
+			<ol>
+			<li>Bietet diverse Trainigsgeräte
+			<li>Verschiedene Kurse
+			<li>Im Keller des Gebäude B
+			<li>Ansprechpartner: David Waschk (AStA), Christopher Müller (AStA)
+			</ol>
+			<h2>Der Raum der Stille</h2>
+			<ol>
+			<li>Primär als Ruheraum gedacht
+			<li>In bestimmten Zeiten Gebetsraum für muslimische Studierende
+			<li>Im Keller des Gebäude B, gegenüber vom Sportkeller
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE ORTE VON DENEN =================================================================================== -->
+	<!-- ======================================================================================================= -->
+
+	<div id="" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Skriptebestellung</h1>
+		</div>
+		<div class="content">
+			<ol>
+			<li>Skripte: vorlesungsbegleitende Unterlagen
+				<ol>
+				<li>Gibt es i.d.R. digital von den Dozenten
+				</ol>
+			<li>Für Freunde von totem Baum (Papier) lassen wir diese Skripte <b>kostenlos</b> beim AStA drucken
+			<li>Skriptebestellung unter <b><a href="https://weho-portal.de">weho-portal.de</a></b></li>
+			<li>Bedingungen:
+				<ol>
+				<li>Der Prof erlaubt uns, seine Unterlagen zu drucken
+				<li>Ihr habt das Skript bestellt
+				</ol>
+			<li>Bestellt nur Skripte für die Veranstaltungen, die ihr besucht
+			<li><b>Bestellbeginn:</b> voraussichtlich ab dem 07.10.2018
+			<li>Ansprechpartner:<br />
+				Farina Lehmann <a href="mailto:skripte@fachschaftinformatik.de">skripte@fachschaftinformatik.de</a>
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="" class="step slide" data-x="0" data-y="0">
+			<div class="header">
+				<h1>Klausurrekonstruktionen</h1>
+			</div>
+			<div class="content">
+				<img style="float:right; height: 8em; width: auto;" class="img-0" width="800" height="587" src="./img/rekos.jpg" />
+				<ol>
+				<li>Häufig auch <i>Rekos</i> genannt
+				<li>Helfen bei der Klausurvorbereitung
+					<ol>
+					<li>Enthalten Aufgaben auf Klausur-Niveau
+					</ol>
+				<li>Von Studierenden für Studierende
+				<li>Bekommt ihr über die Website der FSV
+				<li>Geht <b>niemals</b> mit Aufgaben aus den Rekos zu den Profs!<br />
+					<ol>
+					<li>Die Profs wissen, dass es Rekos gibt, kennen aber deren Inhalte nicht
+					</ol>
+				<li>Rekos sind ein Geben und Nehmen
+					<ol>
+					<li>Erstellt nach euren Klausuren ebenfalls Rekos
+					<li>Gebt diese bei uns ab, damit eure Kommilitonen auch davon profitieren!
+					</ol>
+				</ol>
+			</div>
+			<div class="footer">
+				<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+			</div>
+		</div>
+
+	<!-- ======================================================================================================= -->
+	<!-- ENDE SKRIPTE UND REKOS ================================================================================ -->
+	<!-- ======================================================================================================= -->
+
+	<div id="about-today" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Das erwartet Euch &#8230;</h1>
+		</div>
+		<div class="content">
+			<h2>&#8230; in den nächsten zwei Wochen:</h2>
+			<ol>
+			<li>Schaut einmal auf euren Stundenplan
+			<li>Und markiert folgende Events:
+				<ol>
+				<li>02.10. Kneipentour (19:00 an der Haltestelle Buer Rathaus)
+				<li>1. Woche Do. sowie 2. Woche Mo. und Di. Frühstück (in A4.UG.21)
+				</ol>
+			</ol>
+
+			<h2>&#8230; Heute:</h2>
+			<ol>
+			<li>Rallye</li>
+			<li>Anschließendes Grillen
+				<ol>
+				<li>Hinter dem Gebäudeteil A4
+				<li>Währenddessen Siegerehrung
+				</ol>
+			</li>
+			</ol>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="about-today-2" class="step slide" data-x="0" data-y="0">
+			<div class="header">
+				<h1>Rallye</h1>
+			</div>
+			<div class="content">
+				<ol>
+				<li>Idee: Ihr erkundet eure Hochschule
+					<ol>
+					<li>In Gruppen von 3 bis 5 Personen
+					<li>ca. 1,5 Stunden Zeit zum Lösen der Aufgaben
+					</ol>
+				<li>Währenddessen heizen wir den Grill an
+				<li>Eure Mühe wird belohnt werden
+				<li>Es gibt ein Präsent für <b>jeden</b> Teilnehmer
+				<li>Siegerehrung: Während des Grillens
+				<li>Ihr habt Fragen zur Rallye? Dann kommt zur FSV! (A4.UG.16)
+				<li>ACHTUNG: Es sind <b>Prüfungen</b>! Seid daher bitte <b>leise</b>
+				<li>Alles weitere, wenn ihr den Raum verlasst
+			</div>
+			<div class="footer">
+				<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+			</div>
+		</div>
+
+	<div id="end" class="step slide" data-x="0" data-y="0">
+		<div class="header">
+			<h1>Vielen Dank - Habt Ihr noch Fragen?</h1>
+		</div>
+		<div class="content">
+			<div class="substep">
+				<ul>
+				<li>Nein?
+				<li>Dann auf zur Rallye</li>
+				</ul>
+				<div style="float: left; width: 45%">
+					<h2>Facebook Gruppe für Euch</h2>
+					<img class="center img-0" width="400" height="400" src="./img/qr-code.svg" />
+					<p class="center">
+					<a href="https://www.facebook.com/groups/informatik.erstis2019/">https://www.facebook.com/groups/informatik.erstis2019/</a>
+					</p>
+				</div>
+				<div style="float: right; width: 45%;">
+					<h2>Instagram</h2>
+					<img style="width: auto; height: 10em" class="center img-0" src="./img/instagram-code.jpeg" />
+					<a href="https://www.instagram.com/fs_informatik/">https://www.instagram.com/fs_informatik/</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://fachschaftinformatik.de">fachschaftinformatik.de</a>
+		</div>
+	</div>
+
+	<div id="overview_" class="step" data-x="0" data-y="0" data-scale="1">
+	</div>
+
+</div>
+
+<div class="hint">
+	<p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+	document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script src="js/impress-control.js"></script>
+<script>
+impress().init();
+
+</script>
+
+</body>
+</html>
